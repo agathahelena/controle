@@ -6,11 +6,19 @@
     */
 
     //ENTRADA
-    
+    const notas = Number(prompt(`quantas notas seu aluno obteve `));
+    soma=0;
 
     //PROCESSAMENTO
-    
 
+    for (let contador = 1; contador <= notas; contador++) {
+     let media = Number(prompt(`informe a nota de sue aluno`));
+      soma+= media;
+}
+
+  const divisao = soma/notas;
+    
     //SAÍDA
+    document.write(`sua media sera de ${divisao}`);
 
 </script>
