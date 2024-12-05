@@ -5,11 +5,22 @@
     */
 
     //ENTRADA
+    const pergunta = Number(prompt(`digite um numero`));
 
+     let impares = [];
+     let pares = [];
     
     //PROCESSAMENTO
-
-    
+    for (let contador = 0; contador < pergunta ; contador++) {
+        
+       if (contador % 2 == 0) {
+        pares.push(contador);
+    }
+    else{
+        impare.push(contador)
+    }
+}
     //SAÍDA
+    document.write(`${impare.join(",")}lista Pares ${pares.join(",")}`);
 
 </script>
