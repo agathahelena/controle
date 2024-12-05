@@ -6,11 +6,16 @@
     */
 
     //ENTRADA
-
+    let conjunto = [];
 
     //PROCESSAMENTO
-
+    for (contador = 0; contador < 5 ; contador++) {
+         numero = Number(prompt(`digite um numero`));
+        conjunto.push(numero);
+    }
+    conjunto.sort((a,b) => a -b );
 
     //SAÍDA
+    document.write(`o maior número digitado foi : ${ conjunto[4]} `);
 
 </script>

@@ -6,8 +6,23 @@
 
     //ENTRADA
 
+   const pergunta = Number(prompt(`digite um número`));
+   let conjunto = [];
+
 
     //PROCESSAMENTO
+    for ( let contador =0 ; contador < pergunta; contador++) {
+        conjunto.push(contador); 
+    }
+    for(let contador = 2 ; contador < pergunta; contador++){
+        if (pergunta % contador !== 0) {
+            document.write(`é primo`);
+        }
+        else{
+            document.write(`não é primo`);
+        }
+
+    }
 
 
     //SAÍDA
