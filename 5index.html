@@ -6,23 +6,23 @@
 
     //ENTRADA
 
-   const pergunta = Number(prompt(`digite um número`));
-   let conjunto = [];
+   const numero = Number(prompt(`digite um número`));
+
+   let divisivel = 0;
 
 
     //PROCESSAMENTO
-    for ( let contador =0 ; contador < pergunta; contador++) {
-        conjunto.push(contador); 
-    }
-    for(let contador = 2 ; contador < pergunta; contador++){
-        if (pergunta % contador !== 0) {
-            document.write(`é primo`);
-        }
-        else{
-            document.write(`não é primo`);
+    for ( let contador = 1 ; contador <= numero; contador++) {
+        if (numero % contador === 0) {
+            divisivel= divisivel+1;
         }
     }
-
+       if (divisivel === 2) {
+        document.write(`O número ${numero} é um número primo`);
+       }
+       else{
+        document.write(`O número ${numero} não é um número primo`);
+    }
 
     //SAÍDA
 

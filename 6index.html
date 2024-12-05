@@ -5,22 +5,28 @@
     */
 
     //ENTRADA
-    const pergunta = Number(prompt(`digite um numero`));
+    const inicial = Number(prompt(`digite o numero inicial `));
+    const final = Number(prompt(`digite o numero final`));
 
      let impares = [];
      let pares = [];
     
     //PROCESSAMENTO
-    for (let contador = 0; contador < pergunta ; contador++) {
+    if (inicial >= final) {
+        document.write(`Deu erro . O Número final tem que ser maior que o inicial`)
+    }
+    else{
+
+    for (let contador = inicial; contador <= final ; contador++) {
         
        if (contador % 2 == 0) {
         pares.push(contador);
     }
     else{
-        impare.push(contador)
+        impares.push(contador)
     }
 }
-    //SAÍDA
-    document.write(`${impare.join(",")}lista Pares ${pares.join(",")}`);
+    document.write(` Números Impares ${impares.join(",")} <br> Números Pares ${pares.join(",")}`);
+}
 
 </script>
