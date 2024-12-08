@@ -6,10 +6,16 @@
 
     //ENTRADA
 
+   let  investido = 1000 ;
+   let  dias = 0 ;
 
     //PROCESSAMENTO
-
+    while(investido <= 2000){
+        investido = investido * 1.02;
+        dias += 1;
+    }
 
     //SAÍDA
+    document.write(`A quantidade de dias necessarias para chegar em R$2000 eh : ${dias} dias `);
 
 </script>
