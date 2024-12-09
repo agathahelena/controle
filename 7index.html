@@ -6,16 +6,20 @@
 
     //ENTRADA
 
-    let habitantes = 80000;
-    let Ano = 0 ;
+    let habitates = 80000;
 
+let ano = 0;
 
-    //PROCESSAMENTO
-   while (habitantes <= 200000){
-    habitantes = habitantes * 1.03 ;
-    Ano += 1;
-   }
+//PROCESSAMENTO
 
-   document.write(`A quantidade de anos necessaria é de : ${Ano} `);
+for (let contador = 0; habitates <= 200000; contador++) 
+{
+    habitates = habitates * 1.03;
+    ano++;
+}
+
+//SAÍDA
+
+alert(`Será necessário ${ano} anos para que o número de habitantes atinja 200000`);
 
 </script>

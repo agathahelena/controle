@@ -4,18 +4,32 @@
     Joãozinho investiu R$ 1.000,00 e o investimento renderá 2% por dia útil. Quantos dias demorará para que Joãozinho consiga o total de R$ 2.000,00.
     */
 
-    //ENTRADA
+   
+ //ENTRADA
 
-   let  investido = 1000 ;
-   let  dias = 0 ;
+ let investimento = 1000;
 
-    //PROCESSAMENTO
-    while(investido <= 2000){
-        investido = investido * 1.02;
-        dias += 1;
+let dia = 0;
+
+//PROCESSAMENTO
+
+for (let contador = 0; investimento <= 2000; contador++) 
+{
+    
+    if (contador % 5 === 0 || contador % 5 === 0) 
+    {
+        dia++;
     }
+    else
+    {
+        investimento = investimento * 1.02;
+        dia++;
+    }
+    
+}
 
-    //SAÍDA
-    document.write(`A quantidade de dias necessarias para chegar em R$2000 eh : ${dias} dias `);
+//SAÍDA
+
+alert(`Demorará ${dia} dias para que Joãozinho consiga R$ 2.000,00 reais com seu investimento`);
 
 </script>
